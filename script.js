@@ -84,11 +84,17 @@ canvas.on("selection:cleared", () => {
 });
 
 download.addEventListener("click" , () => {
-   const dataURL = canvas.toDataURL();
+
+   let ans = prompt("Enter File Name")
+   if (ans !== "") {
+    const dataURL = canvas.toDataURL();
    const link = document.createElement('a');
-   link.download = 'image.png';
+   link.download = `${ans}.png`;
    link.href = dataURL;
    document.body.appendChild(link);
    link.click();
    document.body.removeChild(link);
+   } else {
+    alert("Enter File Name")
+   }
 })
