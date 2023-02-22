@@ -52,7 +52,8 @@ rectangle.addEventListener("click", () => {
     height: 60,
     fill: "transparent",
     stroke: "orange",
-    strokeWidth: 3,
+    strokeWidth: 4,
+    strokeUniform: true
   });
   canvas.add(rectangle);
 });
