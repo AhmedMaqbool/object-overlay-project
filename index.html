@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/fabric@5.2.4/dist/fabric.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Project</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <div class="menu-wrapper">
+
+        <div>
+            <button id="draw">Free Drawing</button>
+            <button id="rectangle">Add Rectangle</button>
+            <button id="tag">Add Tag</button>
+            <button id="remove" disabled="disabled">Remove</button>
+            <button id="download">Download Image</button>
+        </div>
+
+        <div class="upload-btn-wrapper">
+            <button class="btn">Upload Image</button>
+            <input type="file" id="img" name="img" accept="image/*" />
+        </div>
+
+    </div>
+    <br>
+    <div>
+        <canvas class="canvas" id="canvas"></canvas>
+    </div>
+</body>
+
+</html>
